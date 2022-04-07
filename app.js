@@ -5,6 +5,7 @@ const date = require(__dirname + "/date.js");
 const app = express();
 const items = ["ハスノードへのブログを作成すること", "自作のプロジェクトを作成すること", "ポートフォリオサイトを作成すること"];
 const workItems = [];
+const port = 3000;
 
 app.set('view engine', 'ejs');
 
@@ -49,6 +50,6 @@ app.post("/work", function (req, res) {
     res.redirect("/work");
 })
 
-app.listen(3000, function () {
-    console.log("Successfully connected to port 3000.");
+app.listen(process.env.PORT || port, function () { //As this is hosted on Heroku, process.env.PORT will just adapt to the port assigned by Heroku, and also listens to localhost port 3000.
+    console.log("Successfully connected to port: 3000.");
 })
