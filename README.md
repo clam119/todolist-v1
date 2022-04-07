@@ -1,8 +1,8 @@
 # Hi, Thank You For Checking Out This Mini Project - Mailchimp Powered Newsletter Signup 
 
-Heroku Deployment Link: 
+Heroku Deployment Link: https://obscure-tundra-51226.herokuapp.com/
 
-## About This Project: https://obscure-tundra-51226.herokuapp.com/
+## About This Project: 
 
 What the application does: This is a basic to-do-list deployed on Heroku that allows the user to add "to-do-list" items and tick the checkbox to rule off the tasks that were done, as well as render the current day.
 
