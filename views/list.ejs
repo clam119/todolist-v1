@@ -1,32 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include ("header") -%>
+    <div class="box" id="heading">
+        <h1><%= listTitle %> </h1>
+    </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do-List</title>
-</head>
-
-<body>
-
-    <h1><%= typeOfDay %> </h1>
-
-
-    <ul>
-
+    <div class="box">
         <% for (let i = 0; i<newListItems.length; i++){ %>
-        <li><%= newListItems[i] %> </li>
-        <%   } %>
+        <div class="item">
+            <input type="checkbox">
+            <p><%= newListItems[i] %> </p>
+        </div>
+
+        <% } %>
+
+        <form class="item" action="/" method="post">
+            <input type="text" name="newItem" autocomplete="off" placeholder="タスクを入力してください">
+            <button type="submit" name="list" value=<%= listTitle %>>＋</button>
+        </form>
+
+    </div>
+    <%- include ("footer") -%>
 
 
-    </ul>
 
-    <form class="" action="/" method="post">
-        <input type="text" name="newItem" placeholder="Next Task Here">
-        <input type="submit" name="button " placeholder="Add">
-    </form>
 
-</body>
 
-</html>
