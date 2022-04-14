@@ -1,6 +1,6 @@
 # Hi, Thank You For Checking Out This Mini Project - Mailchimp Powered Newsletter Signup 
 
-Heroku Deployment Link: https://obscure-tundra-51226.herokuapp.com/
+Heroku Deployment Link: https://todolist-clam119.herokuapp.com/
 
 ## About This Project: 
 
